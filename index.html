@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Waghmare | Full-Stack & Backend Developer</title>
+  <meta name="description" content="Portfolio of Aditya Narendra Waghmare — Motivated Python & Full-Stack Developer skilled in React, Java, MySQL and modern web technologies. Open to backend and full-stack roles." />
+  <meta name="keywords" content="Aditya Waghmare, Python Developer, Full Stack Developer, Backend Developer, Portfolio, React, Java, MySQL" />
+  <meta property="og:title" content="Aditya Waghmare | Full-Stack & Backend Developer" />
+  <meta property="og:description" content="Portfolio of Aditya Narendra Waghmare — Python Developer with hands-on full-stack experience." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AW<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"        class="nav-link" id="nl-about">About</a></li>
+        <li><a href="#skills"       class="nav-link" id="nl-skills">Skills</a></li>
+        <li><a href="#projects"     class="nav-link" id="nl-projects">Projects</a></li>
+        <li><a href="#experience"   class="nav-link" id="nl-experience">Experience</a></li>
+        <li><a href="#certificates" class="nav-link" id="nl-certs">Certificates</a></li>
+        <li><a href="#contact"      class="nav-link" id="nl-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-content reveal">
+      <p class="hero-greeting">
+        <span class="greeting-line"></span>Hello, I'm<span class="greeting-line"></span>
+      </p>
+      <h1 class="hero-name">
+        Aditya <span class="gradient-text">Waghmare</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">I build as a&nbsp;</span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor" id="cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        Motivated Python Developer with hands-on experience in full-stack &amp; backend development,
+        delivering robust software solutions. Recognized at university levels for technical excellence.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="hero-view-work">
+          <span>View My Work</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="resume.pdf" class="btn btn-secondary" download id="hero-download-cv">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/adityawaghmare19" target="_blank" rel="noopener" class="social-link" id="hero-github" aria-label="GitHub Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/aditya-waghmare-817b65297" target="_blank" rel="noopener" class="social-link" id="hero-linkedin" aria-label="LinkedIn Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:adityawaghmare1903@gmail.com" class="social-link" id="hero-email" aria-label="Send Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring avatar-ring-2"></div>
+            <span class="avatar-initials">AW</span>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card reveal">
+              <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card reveal">
+              <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card reveal">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <p class="about-p">
+            Motivated Python Developer with <strong>6 months of hands-on experience</strong> in full-stack and backend
+            development, delivering robust software solutions. Proficient in Python, SQL, and modern web technologies,
+            <strong>recognized at university levels for technical excellence.</strong>
+          </p>
+          <p class="about-p">
+            Eager to contribute to designing, developing, and maintaining high-quality backend services and web
+            applications throughout the development lifecycle.
+          </p>
+          <div class="about-tags">
+            <span class="tag">🧠 Problem Solver</span>
+            <span class="tag">🤝 Team Player</span>
+            <span class="tag">⚡ Fast Learner</span>
+            <span class="tag">🎯 Detail-Oriented</span>
+            <span class="tag">🚀 Backend Enthusiast</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass-card reveal" id="skill-languages">
+          <div class="skill-cat-icon">⌨️</div>
+          <h3>Programming Languages</h3>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">Java</span>
+            <span class="pill">C++</span>
+            <span class="pill">C</span>
+            <span class="pill">Android (Basic)</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal" id="skill-web">
+          <div class="skill-cat-icon">🌐</div>
+          <h3>Web Technologies</h3>
+          <div class="skill-pills">
+            <span class="pill">React</span>
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">PHP</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal" id="skill-frameworks">
+          <div class="skill-cat-icon">🔧</div>
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="skill-pills">
+            <span class="pill">Spring Boot</span>
+            <span class="pill">JDBC</span>
+            <span class="pill">REST API</span>
+            <span class="pill">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal" id="skill-db">
+          <div class="skill-cat-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="skill-pills">
+            <span class="pill">MySQL</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card reveal" id="skill-tools">
+          <div class="skill-cat-icon">🛠️</div>
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-pills">
+            <span class="pill">Git</span>
+            <span class="pill">GitHub</span>
+            <span class="pill">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Stockbot -->
+        <article class="project-card glass-card reveal" id="project-stockbot">
+          <div class="project-top">
+            <span class="project-number">01</span>
+            <div class="project-links">
+              <a href="https://github.com/adityawaghmare19" target="_blank" rel="noopener" class="icon-btn" aria-label="View on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon-large">📈</div>
+          <h3 class="project-title">Stockbot</h3>
+          <p class="project-desc">Developed a Stockbot for automated stock market analysis using Python and MySQL, delivering real-time email alerts and transaction logs. Enhanced user decision-making with timely purchase and sale recommendations.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Email Automation</span>
+            <span class="tech-tag">Data Analysis</span>
+          </div>
+          <div class="project-card-glow"></div>
+        </article>
+
+        <!-- Personal Assistant -->
+        <article class="project-card glass-card reveal" id="project-assistant">
+          <div class="project-top">
+            <span class="project-number">02</span>
+            <div class="project-links">
+              <a href="https://github.com/adityawaghmare19" target="_blank" rel="noopener" class="icon-btn" aria-label="View on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon-large">🤖</div>
+          <h3 class="project-title">Personal Assistant Bot</h3>
+          <p class="project-desc">Created a voice-command personal assistant bot using Python and MongoDB, automating daily tasks like news fetching and application management. Integrated IoT device operations to enhance smart home functionality.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">Voice Recognition</span>
+          </div>
+          <div class="project-card-glow"></div>
+        </article>
+
+        <!-- Aqualife -->
+        <article class="project-card glass-card reveal" id="project-aqualife">
+          <div class="project-top">
+            <span class="project-number">03</span>
+            <div class="project-links">
+              <a href="https://github.com/adityawaghmare19" target="_blank" rel="noopener" class="icon-btn" aria-label="View on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-icon-large">🐟</div>
+          <h3 class="project-title">Aqualife — POS System</h3>
+          <p class="project-desc">Designed and implemented the Aqualife Point of Sale and Inventory Management system using Java and MySQL for an aquarium store. Streamlined billing processes and inventory tracking, improving operational efficiency.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">POS System</span>
+            <span class="tech-tag">Inventory Mgmt</span>
+          </div>
+          <div class="project-card-glow"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <!-- Uptoskills -->
+        <div class="timeline-item reveal" id="exp-uptoskills">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-body glass-card">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3 class="timeline-role">Backend Developer</h3>
+                <p class="timeline-company">🏢 Uptoskills</p>
+              </div>
+              <span class="timeline-period">Feb 2024 – Apr 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Engaged as a Backend Developer, specializing in React-based backend systems for software development initiatives.</li>
+              <li>Designed and implemented server-side logic and API integrations, improving application performance and functionality.</li>
+              <li>Collaborated with cross-functional teams on feature development, ensuring seamless system integration and timely delivery.</li>
+            </ul>
+            <div class="timeline-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Backend Systems</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">API Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campus Company GCC -->
+        <div class="timeline-item reveal" id="exp-gcc">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-body glass-card">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3 class="timeline-role">Web Developer Intern</h3>
+                <p class="timeline-company">🏢 Campus Company GCC</p>
+              </div>
+              <span class="timeline-period">Nov 2022 – Jan 2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Contributed as a Full-stack Web Developer to an e-commerce platform, gaining practical exposure to the software development lifecycle.</li>
+              <li>Implemented functional web components using HTML, CSS, JavaScript, and PHP, delivering scalable solutions for online retail.</li>
+              <li>Collaborated with development teams to ensure smooth integration and timely delivery of web features.</li>
+            </ul>
+            <div class="timeline-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Full-Stack</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Achievements</span>
+        <h2 class="section-title">Certifi<span class="gradient-text">cations</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal" id="cert-python">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge">🐍</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Python</h3>
+            <p class="cert-issuer">NPTEL</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal" id="cert-oracle">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge">🤖</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">AI Foundations Associate</h3>
+            <p class="cert-issuer">Oracle</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal" id="cert-sql">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge">📊</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">SQL for Data Science</h3>
+            <p class="cert-issuer">Great Learning</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal" id="cert-java">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge">☕</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Java</h3>
+            <p class="cert-issuer">IIT Bombay</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal" id="cert-linux">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge">🐧</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Linux</h3>
+            <p class="cert-issuer">IIT Bombay</p>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-wrapper reveal">
+        <p class="contact-sub">
+          I'm currently open to new opportunities. Whether you have a question, a project idea,
+          or just want to say hi — my inbox is always open!
+        </p>
+        <div class="contact-cards">
+
+          <a href="mailto:adityawaghmare1903@gmail.com" class="contact-card glass-card" id="contact-email">
+            <div class="contact-icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            </div>
+            <div class="contact-info">
+              <h4>Email</h4>
+              <p>adityawaghmare1903@gmail.com</p>
+            </div>
+            <svg class="contact-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/aditya-waghmare-817b65297" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-linkedin">
+            <div class="contact-icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-info">
+              <h4>LinkedIn</h4>
+              <p>aditya-waghmare-817b65297</p>
+            </div>
+            <svg class="contact-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <a href="https://github.com/adityawaghmare19" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-github">
+            <div class="contact-icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-info">
+              <h4>GitHub</h4>
+              <p>adityawaghmare19</p>
+            </div>
+            <svg class="contact-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <a href="resume.pdf" download class="contact-card glass-card" id="contact-resume">
+            <div class="contact-icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="contact-info">
+              <h4>Resume</h4>
+              <p>Download PDF</p>
+            </div>
+            <svg class="contact-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#home" class="footer-logo">AW<span class="logo-dot">.</span></a>
+      <p class="footer-copy">Designed &amp; Built by <span class="gradient-text">Aditya Waghmare</span></p>
+      <p class="footer-sub">© 2024 · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
