@@ -11,7 +11,7 @@ portfolio/
 ├── index.html      ← Main HTML file
 ├── styles.css      ← All styles (dark theme, animations, responsive)
 ├── script.js       ← Interactivity (particles, typing, scroll FX)
-├── resume.pdf      ← Your resume (add this file!)
+├── resume.pdf      ← My resume 
 └── README.md       ← This file
 ```
 
@@ -23,8 +23,3 @@ git branch -M main
 git remote add origin https://github.com/adityawaghmare19/portfolio.git
 git push -u origin main
 ```
-
-| Add certificate images | Add `<img>` inside `.cert-card` elements |
-
----
-
