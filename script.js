@@ -223,3 +223,30 @@ document.querySelectorAll('a[href="#home"]').forEach(a => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+
+/* ── Cert Modal / Lightbox ──────────────────── */
+const certModal = document.getElementById('certModal');
+const modalImg = document.getElementById('modalImg');
+const modalClose = document.getElementById('modalClose');
+
+if (certModal && modalImg && modalClose) {
+  document.querySelectorAll('.cert-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const img = card.querySelector('.cert-preview');
+      if (img && img.src) {
+        certModal.style.display = 'block';
+        modalImg.src = img.src;
+      }
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    certModal.style.display = 'none';
+  });
+
+  certModal.addEventListener('click', (e) => {
+    if (e.target !== modalImg) {
+      certModal.style.display = 'none';
+    }
+  });
+}
